@@ -1,0 +1,55 @@
+/* Setting default font size for HTML and body */
+html, body {
+    font-size: 16px;
+}
+
+/* Font weight for paragraphs, h1, and h2 */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Styling for address */
+address {
+    text-align: center;
+}
+
+/* Styling for website link */
+address a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Pseudo classes for website link */
+address a:hover {
+    text-decoration: underline; /* Apply underline on hover */
+    background-color: #D6A800;
+}
+
+address a:visited {
+    /* Add your preferred styles for visited links here, e.g. */
+    color: #563d7c; /* Just a darker shade of the original color */
+}
+
+/* Specific styling for CSS classes */
+.sentence {
+    font-style: italic;
+}
+
+.intro {
+    text-indent: 2em;
+}
