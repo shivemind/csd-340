@@ -1,0 +1,32 @@
+/* Importing a Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Applied the Google font to the body */
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #3498db; /* A shade of blue, but you can change it to any color you like */
+    color: #ffffff; /* White color for font */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #2c3e50; /* A shade of dark blue, in line with the color scheme */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e74c3c; /* A shade of red for hover, you can adjust based on your preference */
+}
+
+a:visited {
+    color: #8e44ad; /* A shade of purple for visited links */
+}
