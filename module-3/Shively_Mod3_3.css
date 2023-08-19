@@ -1,0 +1,70 @@
+/* Style for the h1 title */
+#container h1 {
+    text-align: center;
+}
+
+/* Style for side-by-side divs */
+#container > div {
+    float: left;
+    width: 45%;
+    box-sizing: border-box; /* Ensures padding doesn't increase the total width */
+}
+
+/* Clear floats after the side-by-side divs */
+#container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the last div */
+#container > div:last-of-type {
+    float: right;
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px; /* Added as per the instructions */
+}
+
+/* Style for the h3 tags */
+h3 {
+    font-weight: 500;
+}
+
+/* Style for lists */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Style for ordered list and its title */
+#container ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-position: inside; /* Makes the list numbers inside the border */
+}
+
+#container ol + h3 { /* Selects the h3 directly preceding an ol */
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Style for unordered list and its title */
+#container ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside; /* Makes the list bullets inside the border */
+}
+
+#container ul + h3 { /* Selects the h3 directly preceding an ul */
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Style for the link hover effect */
+a:hover {
+    text-decoration: underline;
+}
