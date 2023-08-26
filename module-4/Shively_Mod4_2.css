@@ -1,0 +1,51 @@
+/* Container */
+#container {
+    text-align: center;
+}
+
+/* Main header */
+h1 {
+    text-align: center;
+    color: rgba(255, 0, 0, 0.7);  /* optional */
+}
+
+/* Image Gallery */
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+/* Individual image boxes */
+.image-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Image box titles */
+.image-box h3 {
+    text-align: center;
+    color: rgba(0, 128, 0, 0.7);  /* optional */
+}
+
+/* Images */
+.image-box figure {
+    text-align: center;
+}
+
+/* Captions */
+.image-box figcaption {
+    font-size: 0.75em;
+    font-style: italic;
+    color: rgba(0, 0, 255, 0.7);  /* optional */
+}
+
+/* Link back to the landing page */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
