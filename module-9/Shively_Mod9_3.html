@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <script>
+            var firstWord = "aerial";
+            var secondWord = "humanity";
+            var thirdWord = "freedom";
+            var fourthWord = "survive";
+        </script>
+    </head>
+
+    <body>
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <p>President Whitmore's Speech</p>
+        <p>Good morning. In less than an hour, aircraft from here will join others from around the world. And you will be launching the largest <span id="firstWord">_______</span> battle in the history of mankind.</p>
+        <p>This word should have new meaning for all of us today. We can't be consumed by our petty differences anymore. We will be united in our common interests. Today we celebrate our <span id="fourthWord">_______</span>.</p>
+
+        <p>
+            <button type="button" onclick="document.getElementById('firstWord').innerHTML = firstWord">Replace First Word</button> <br />
+            <button type="button" onclick="document.getElementById('fourthWord').innerHTML = fourthWord">Replace Fourth Word</button> <br />
+        </p>
+    </body>
+</html>
