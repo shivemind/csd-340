@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>Instructions: Type in your entry and use the buttons to add or delete items from the list.</p>
+
+    <input type="text" id="textInput" placeholder="Type your entry here...">
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+
+    <script>
+        var itemsArray = [];
+
+        function addItem() {
+            var item = document.getElementById('textInput').value;
+            itemsArray.push(item);
+            alert(`Added: "${item}" at position ${itemsArray.length}`);
+            document.getElementById('textInput').value = '';  // Clear the input box
+        }
+
+        function deleteLastEntry() {
+            if(itemsArray.length === 0) {
+                alert("No items to delete!");
+                return;
+            }
+            itemsArray.pop();
+            alert("Last entry deleted!");
+        }
+
+        function displayItems() {
+            var displayText = "";
+            for (var i = 0; i < itemsArray.length; i++) {
+                displayText += (i + 1) + ". " + itemsArray[i] + "\n";
+            }
+            alert(displayText);
+        }
+    </script>
+</body>
+</html>
